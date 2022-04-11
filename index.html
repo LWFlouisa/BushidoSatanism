@@ -44,6 +44,15 @@ function play(elem)
     ol, ul, li {
         color: #5c4f34;
     }
+    
+    div {
+        width: 100%;
+        height: 400px;
+        background-image: url('redsun.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+        border: 1px solid red;
+    }
 </style>
 
 <style type="text/css">
@@ -54,16 +63,18 @@ li.playing { font-weight: bold; }
 
 </head>
 <body onload="init()">
-  <center><img src="https://raw.githubusercontent.com/LWFlouisa/ComradeGaijinCaste/main/redsun.png" width="33%"></center>
-  <h1>Comrade Gaijin, S.R. Weaver Playlist</h1>
-  <h2>#GaijinTube</h2>
-  <hr/>
+  <div>
+    <center><img src="https://raw.githubusercontent.com/LWFlouisa/ComradeGaijinCaste/main/redsun.png" width="33%"></center>
+    <h1>Comrade Gaijin, S.R. Weaver Playlist</h1>
+    <h2>#GaijinTube</h2>
+    <hr/>
   
-  <audio id="audio" controls="controls" onerror="alert('Could not play MP3 audio file ' + this.src + '!');" onended="skip()">HTML5 MP3 audio required (Chrome, Safari, IE 9?)</audio>
+    <audio id="audio" controls="controls" onerror="alert('Could not play MP3 audio file ' + this.src + '!');" onended="skip()">HTML5 MP3 audio required (Chrome, Safari, IE 9?)</audio>
   
-  <ul>
-  <li>mp3/intromelody</li>
-  <li>mp3/comradegaijinEp10</li>
-  </ul>
+    <ul>
+      <li>mp3/intromelody</li>
+      <li>mp3/comradegaijinEp10</li>
+    </ul>
+  </div>
 </body>
 </html
